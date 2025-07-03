@@ -1,0 +1,72 @@
+[
+    {
+        "id": "1",
+        "facultyId": "1",
+        "rating": 5,
+        "course": "Introduction to AI",
+        "comment": "Dr. Johnson makes complex AI concepts easy to understand. Her practical examples and hands-on projects really helped me grasp the fundamentals. The course was challenging but very rewarding."
+    },
+    {
+        "id": "2",
+        "facultyId": "1",
+        "rating": 4.5,
+        "course": "Advanced Machine Learning",
+        "comment": "Excellent course structure and content. The assignments were well-designed and the feedback was always constructive. Dr. Johnson is very approachable during office hours."
+    },
+    {
+        "id": "3",
+        "facultyId": "2",
+        "rating": 5,
+        "course": "Software Design Patterns",
+        "comment": "Prof. Chen's real-world examples made design patterns click for me. His industry experience adds so much value to the course. The project-based learning approach was particularly effective."
+    },
+    {
+        "id": "4",
+        "facultyId": "2",
+        "rating": 4,
+        "course": "Cloud Architecture",
+        "comment": "Very comprehensive coverage of modern cloud technologies. The hands-on labs were excellent, though some were quite challenging. Prof. Chen was always available to help when needed."
+    },
+    {
+        "id": "5",
+        "facultyId": "3",
+        "rating": 5,
+        "course": "Introduction to Data Science",
+        "comment": "Dr. Rodriguez has an incredible ability to explain complex statistical concepts in simple terms. Her real-world examples and case studies made the material come alive. Highly recommend!"
+    },
+    {
+        "id": "6",
+        "facultyId": "3",
+        "rating": 4.8,
+        "course": "Statistical Learning",
+        "comment": "Outstanding course that bridges theory and practice perfectly. Dr. Rodriguez's research experience shines through in her teaching. The projects were challenging but very educational."
+    },
+    {
+        "id": "7",
+        "facultyId": "4",
+        "rating": 4.7,
+        "course": "Network Security",
+        "comment": "Prof. Kim brings real-world security challenges into the classroom. His practical approach to cybersecurity made the concepts much more engaging and memorable."
+    },
+    {
+        "id": "8",
+        "facultyId": "4",
+        "rating": 4.6,
+        "course": "Ethical Hacking",
+        "comment": "Fascinating course that teaches both offensive and defensive security techniques. Prof. Kim's industry connections provided valuable insights into current security threats."
+    },
+    {
+        "id": "9",
+        "facultyId": "5",
+        "rating": 4.5,
+        "course": "UX Design Principles",
+        "comment": "Dr. Thompson's design thinking approach transformed how I think about user experience. Her portfolio of real projects was inspiring and the hands-on design work was invaluable."
+    },
+    {
+        "id": "10",
+        "facultyId": "5",
+        "rating": 4.4,
+        "course": "Interaction Design",
+        "comment": "Great course that combines creativity with technical skills. Dr. Thompson's feedback on our design projects was always constructive and helped us improve significantly."
+    }
+]

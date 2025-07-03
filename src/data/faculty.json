@@ -1,0 +1,165 @@
+[
+    {
+        "id": "1",
+        "name": "Dr. Sarah Johnson",
+        "department": "Computer Science",
+        "rating": 4.8,
+        "emoji": "👩‍🏫",
+        "experience": 12,
+        "officeHours": "Mon, Wed 2-4 PM",
+        "about": "Dr. Johnson specializes in artificial intelligence and machine learning. With over a decade of experience in both academia and industry, she brings practical insights to theoretical concepts. Her teaching philosophy emphasizes hands-on learning and real-world applications.",
+        "researchInterests": [
+            "Machine Learning",
+            "Neural Networks",
+            "Computer Vision",
+            "Natural Language Processing"
+        ],
+        "courses": [
+            "Introduction to AI",
+            "Advanced Machine Learning",
+            "Deep Learning Systems"
+        ],
+        "links": [
+            {
+                "title": "Research Lab Website",
+                "url": "https://example.com/research"
+            },
+            {
+                "title": "Course Materials",
+                "url": "https://example.com/courses"
+            },
+            {
+                "title": "Office Hours Booking",
+                "url": "https://example.com/booking"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Prof. Michael Chen",
+        "department": "Software Engineering",
+        "rating": 4.6,
+        "emoji": "👨‍🏫",
+        "experience": 8,
+        "officeHours": "Tue, Thu 1-3 PM",
+        "about": "Prof. Chen is passionate about software architecture and clean code practices. He combines academic excellence with industry experience from leading tech companies. His courses focus on practical software development skills and modern development methodologies.",
+        "researchInterests": [
+            "Software Architecture",
+            "Cloud Computing",
+            "DevOps",
+            "Microservices"
+        ],
+        "courses": [
+            "Software Design Patterns",
+            "Cloud Architecture",
+            "Agile Development"
+        ],
+        "links": [
+            {
+                "title": "GitHub Projects",
+                "url": "https://github.com"
+            },
+            {
+                "title": "Course Repository",
+                "url": "https://example.com/courses"
+            },
+            {
+                "title": "Blog",
+                "url": "https://example.com/blog"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "name": "Dr. Emily Rodriguez",
+        "department": "Data Science",
+        "rating": 4.9,
+        "emoji": "👩‍💻",
+        "experience": 15,
+        "officeHours": "Mon, Fri 10-12 AM",
+        "about": "Dr. Rodriguez is a leading expert in data science and statistical analysis. She has published over 50 research papers and has been recognized for her innovative teaching methods that make complex statistical concepts accessible to students.",
+        "researchInterests": [
+            "Statistical Learning",
+            "Big Data Analytics",
+            "Predictive Modeling",
+            "Data Visualization"
+        ],
+        "courses": [
+            "Introduction to Data Science",
+            "Statistical Learning",
+            "Big Data Analytics"
+        ],
+        "links": [
+            {
+                "title": "Research Publications",
+                "url": "https://example.com/publications"
+            },
+            {
+                "title": "Data Science Lab",
+                "url": "https://example.com/lab"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "name": "Prof. David Kim",
+        "department": "Cybersecurity",
+        "rating": 4.7,
+        "emoji": "👨‍🔒",
+        "experience": 10,
+        "officeHours": "Wed, Thu 3-5 PM",
+        "about": "Prof. Kim is a cybersecurity expert with extensive experience in network security and ethical hacking. He brings real-world security challenges into the classroom and prepares students for careers in cybersecurity.",
+        "researchInterests": [
+            "Network Security",
+            "Cryptography",
+            "Ethical Hacking",
+            "Security Protocols"
+        ],
+        "courses": [
+            "Network Security",
+            "Cryptography",
+            "Ethical Hacking"
+        ],
+        "links": [
+            {
+                "title": "Security Lab",
+                "url": "https://example.com/security"
+            },
+            {
+                "title": "CTF Challenges",
+                "url": "https://example.com/ctf"
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "name": "Dr. Lisa Thompson",
+        "department": "Human-Computer Interaction",
+        "rating": 4.5,
+        "emoji": "👩‍🎨",
+        "experience": 7,
+        "officeHours": "Tue, Fri 2-4 PM",
+        "about": "Dr. Thompson specializes in user experience design and human-computer interaction. She combines design thinking with technical implementation to create intuitive and accessible digital experiences.",
+        "researchInterests": [
+            "User Experience Design",
+            "Accessibility",
+            "Interaction Design",
+            "User Research"
+        ],
+        "courses": [
+            "UX Design Principles",
+            "Interaction Design",
+            "User Research Methods"
+        ],
+        "links": [
+            {
+                "title": "Design Portfolio",
+                "url": "https://example.com/portfolio"
+            },
+            {
+                "title": "UX Lab",
+                "url": "https://example.com/uxlab"
+            }
+        ]
+    }
+]
