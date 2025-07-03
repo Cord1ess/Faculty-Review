@@ -1,5 +1,6 @@
 import React from 'react';
 import FacultyCarousel from '../components/FacultyCarousel';
+import FeaturesSection from '../sections/FeaturesSection';
 
 const StatCard = ({ number, label }) => (
     <div className="bg-[#1E1E1E] rounded-xl p-6 border border-gray-700/30 
@@ -39,6 +40,11 @@ const Home = () => {
             <section>
                 <FacultyCarousel />
             </section>
+
+            {/* Features Art Row Section */}
+            <div className="my-4">
+                <FeaturesSection />
+            </div>
 
             {/* Quick Stats */}
             <section>

@@ -74,7 +74,7 @@ function App() {
 
   return (
     <Router>
-      <div className="min-h-screen flex flex-col bg-[#121212]">
+      <div className="min-h-screen flex flex-col bg-[#121212] overflow-x-hidden">
         <Navbar
           isLoggedIn={isLoggedIn}
           onLoginClick={() => handleOpenModal('login')}

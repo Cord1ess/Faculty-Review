@@ -9,8 +9,8 @@ export default {
         extend: {
             colors: {
                 'primary': {
-                    start: '#FF6B00',
-                    end: '#FF9800',
+                    start: '#FF6B00', // Orange gradient start
+                    end: '#FF9800',   // Orange gradient end
                     100: '#FFF1E6',
                     200: '#FFE4CC',
                     300: '#FFD4B3',
@@ -30,7 +30,7 @@ export default {
                 }
             },
             backgroundImage: {
-                'orange-gradient': 'linear-gradient(to right, var(--tw-gradient-from), var(--tw-gradient-to))',
+                'orange-gradient': 'linear-gradient(to right, var(--tw-gradient-from), var(--tw-gradient-to))', // Orange gradient utility
             },
             animation: {
                 'fade-in': 'fadeIn 0.5s ease-in-out',

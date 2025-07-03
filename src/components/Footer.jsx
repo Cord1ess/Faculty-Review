@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiGithub, FiMail, FiInfo } from 'react-icons/fi';
+import { FiGithub, FiMail, FiInfo, FiSun, FiMoon } from 'react-icons/fi';
 
 const Footer = () => {
     return (
