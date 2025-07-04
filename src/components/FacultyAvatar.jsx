@@ -1,38 +1,16 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FiStar, FiUser, FiAward, FiThumbsUp, FiLock } from 'react-icons/fi';
+import DefaultMan from '../assets/Default_Man.svg';
+import DefaultWoman from '../assets/Default_Woman.svg';
+import StarRating from './StarRating';
+import { getFacultyProfilePic } from '../utils/profilePic';
 
 const FacultyAvatar = ({ faculty, recentComment }) => {
     const navigate = useNavigate();
 
     const handleProfileClick = () => {
         navigate(`/faculty/${faculty.id}`);
-    };
-
-    const renderStars = (rating) => {
-        const stars = [];
-        const fullStars = Math.floor(rating);
-        const hasHalfStar = rating % 1 !== 0;
-        for (let i = 0; i < fullStars; i++) {
-            stars.push(
-                <FiStar key={i} className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-500 fill-current" />
-            );
-        }
-        if (hasHalfStar) {
-            stars.push(
-                <div key="half" className="relative">
-                    <FiStar className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
-                    <FiStar className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-500 fill-current absolute inset-0" style={{ clipPath: 'inset(0 50% 0 0)' }} />
-                </div>
-            );
-        }
-        const emptyStars = 5 - Math.ceil(rating);
-        for (let i = 0; i < emptyStars; i++) {
-            stars.push(
-                <FiStar key={`empty-${i}`} className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
-            );
-        }
-        return stars;
     };
 
     // Handler for faculty page navigation
@@ -45,13 +23,16 @@ const FacultyAvatar = ({ faculty, recentComment }) => {
         navigate(`/faculty/${faculty.id}?highlight=${recentComment?.id || ''}#comment-${recentComment?.id || ''}`);
     };
 
+    // Replace logic for determining profilePic with getFacultyProfilePic(faculty)
+    let profilePic = getFacultyProfilePic(faculty);
+
     return (
         <div className="w-full max-w-4xl aspect-[16/9] flex items-center justify-center mx-auto">
             <div className="w-full h-full bg-black/30 rounded-2xl shadow-lg border border-gray-700/30 flex flex-row items-start box-border overflow-hidden" style={{ padding: 'clamp(16px, 2vw, 32px)' }}>
                 {/* Left: Profile Info */}
                 <div className="flex flex-col items-start justify-start h-full pr-[clamp(12px,1.2vw,24px)] min-w-[clamp(110px,16vw,180px)] max-w-[clamp(140px,20vw,220px)] flex-shrink-0">
                     <button onClick={goToFacultyPage} className="relative flex items-center justify-center w-[clamp(56px,7vw,90px)] h-[clamp(56px,7vw,90px)] rounded-full bg-gradient-to-br from-orange-400/80 to-orange-600/80 shadow-lg mb-[clamp(8px,1vw,18px)] border-4 border-orange-400/40 hover:scale-105 transition-transform">
-                        <span className="text-[clamp(28px,2.5vw,44px)]">{faculty.avatar}</span>
+                        <img src={profilePic} alt="Profile" className="w-full h-full object-cover rounded-full" />
                         {faculty.privacy && (
                             <span className="absolute bottom-1 right-1 bg-black/60 rounded-full p-1">
                                 <FiLock className="w-5 h-5 text-orange-300" />
@@ -74,7 +55,7 @@ const FacultyAvatar = ({ faculty, recentComment }) => {
                         <div className="flex-1 bg-black/40 rounded-xl p-[clamp(8px,1vw,16px)] border border-gray-700/30 flex flex-col items-center justify-center min-w-0 shadow-sm h-full">
                             <span className="text-[clamp(10px,0.9vw,14px)] text-gray-400 mb-[clamp(2px,0.3vw,5px)]">Overall Rating</span>
                             <div className="flex items-center gap-[clamp(2px,0.3vw,6px)]">
-                                {renderStars(faculty.rating)}
+                                <StarRating rating={faculty.rating} size={20} />
                                 <span className="text-[clamp(12px,1vw,18px)] font-bold text-white ml-[clamp(2px,0.3vw,6px)]">{faculty.rating}</span>
                             </div>
                         </div>

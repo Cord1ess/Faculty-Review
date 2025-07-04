@@ -12,7 +12,6 @@ const Modal = ({ isOpen, onClose, children }) => {
 
         if (isOpen) {
             document.addEventListener('mousedown', handleClickOutside);
-            // Prevent scrolling when modal is open
             document.body.style.overflow = 'hidden';
         }
 
@@ -25,13 +24,10 @@ const Modal = ({ isOpen, onClose, children }) => {
     if (!isOpen) return null;
 
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm">
             <div
                 ref={modalRef}
-                className="w-full max-w-md bg-[#1E1E1E]/90 backdrop-blur-xl 
-                 border border-gray-700/30 rounded-2xl p-8 shadow-2xl 
-                 transform transition-all duration-300 ease-out
-                 animate-fade-up"
+                className="w-full max-w-md rounded-2xl p-0 transform transition-all duration-300 ease-out animate-fade-up"
             >
                 {children}
             </div>

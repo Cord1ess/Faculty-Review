@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import SearchBar from './SearchBar';
 import { FiMenu, FiX } from 'react-icons/fi';
+// @ts-ignore
+import HiveLinkLogo from '../assets/HiveLink_logo.svg';
 
 interface NavbarProps {
     onLoginClick: () => void;
@@ -24,12 +26,12 @@ const Navbar: React.FC<NavbarProps> = ({ onLoginClick, onSignupClick, onLogout, 
             <nav className="fixed top-0 left-0 right-0 z-40 bg-white/2 backdrop-blur-lg shadow-lg">
                 <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between gap-4">
                     {/* Logo/Title - HiveLink UIU */}
-                    <Link to="/" className="text-2xl font-bold font-sans bg-gradient-to-r from-primary-start to-primary-end bg-clip-text text-transparent drop-shadow-md select-none">
-                        HiveLink UIU
+                    <Link to="/" className="flex items-center" onClick={() => window.location.href = '/'}>
+                        <img src={HiveLinkLogo} alt="HiveLink UIU" className="h-8 md:h-9 w-auto transition-all duration-300 ease-in-out hover:scale-110 hover:brightness-110 active:brightness-0 active:invert active:transition-all active:duration-500" />
                     </Link>
 
-                    {/* Desktop Search Bar */}
-                    <div className="hidden md:flex flex-1 justify-center">
+                    {/* Desktop Search Bar - Absolutely Centered */}
+                    <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2">
                         <SearchBar onSearch={handleSearch} />
                     </div>
 

@@ -9,17 +9,17 @@ export default {
         extend: {
             colors: {
                 'primary': {
-                    start: '#FF6B00', // Orange gradient start
-                    end: '#FF9800',   // Orange gradient end
+                    start: '#ffb700', // HiveLink logo gradient start (golden yellow)
+                    end: '#ff6d00',   // HiveLink logo gradient end (orange)
                     100: '#FFF1E6',
                     200: '#FFE4CC',
                     300: '#FFD4B3',
                     400: '#FFC299',
-                    500: '#FF6B00',
-                    600: '#E65D00',
-                    700: '#CC5200',
-                    800: '#B34700',
-                    900: '#993D00'
+                    500: '#ff6d00',
+                    600: '#e65d00',
+                    700: '#cc5200',
+                    800: '#b34700',
+                    900: '#993d00'
                 },
                 'dark': {
                     100: '#1E1E1E',

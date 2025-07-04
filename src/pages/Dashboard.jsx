@@ -3,6 +3,7 @@ import { FiUser, FiStar, FiBookmark, FiSettings, FiEdit, FiUsers, FiBookOpen } f
 import { ReviewCard } from './FacultyPage';
 import facultyData from '../data/faculty.json';
 import { useNavigate } from 'react-router-dom';
+import StarRating from '../components/StarRating';
 
 const TABS = [
     { key: 'profile', label: 'Profile', icon: <FiUser /> },
@@ -14,47 +15,6 @@ const TABS = [
 const ADMIN_TABS = [
     { key: 'admin', label: 'Admin', icon: <FiUsers /> },
 ];
-
-// SmallReviewCard for dashboard reviews
-const SmallReviewCard = ({ review, faculty, onRemove }) => (
-    <div className="flex bg-white/5 border border-white/10 rounded-lg p-4 shadow hover:bg-white/10 transition-all items-stretch">
-        {/* Faculty Info Left */}
-        <div className="flex flex-col items-center justify-center w-32 pr-4 border-r border-white/10">
-            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#FF6B00] to-[#FF9800] flex items-center justify-center text-3xl shadow mb-2">
-                {faculty.emoji}
-            </div>
-            <div className="text-base font-bold text-white text-center truncate max-w-[96px]">{faculty.name}</div>
-            <div className="text-xs text-orange-500 text-center mt-1">{faculty.department}</div>
-        </div>
-        {/* Review Content Right */}
-        <div className="flex-1 flex flex-col justify-between pl-6">
-            <div>
-                <div className="flex items-center gap-2 mb-1">
-                    {[...Array(Math.floor(review.rating))].map((_, i) => (
-                        <FiStar key={i} className="w-4 h-4 text-yellow-500 fill-current" />
-                    ))}
-                    {review.rating % 1 !== 0 && (
-                        <span className="relative">
-                            <FiStar className="w-4 h-4 text-gray-400" />
-                            <FiStar className="w-4 h-4 text-yellow-500 fill-current absolute inset-0" style={{ clipPath: 'inset(0 50% 0 0)' }} />
-                        </span>
-                    )}
-                    <span className="text-sm text-white ml-1">{review.rating}</span>
-                </div>
-                <div className="text-gray-300 text-sm mb-1">{review.comment}</div>
-                <div className="text-gray-500 text-xs mt-1">Course: <span className="text-white">{review.course}</span></div>
-            </div>
-            <div className="flex justify-end mt-2">
-                <button
-                    onClick={onRemove}
-                    className="px-3 py-1 bg-red-500/80 hover:bg-red-600 text-white text-xs rounded-lg font-medium transition-all"
-                >
-                    Remove
-                </button>
-            </div>
-        </div>
-    </div>
-);
 
 const Dashboard = () => {
     // For now, only admin is logged in
@@ -145,9 +105,9 @@ const Dashboard = () => {
                                         <ReviewCard
                                             key={review.id}
                                             review={review}
+                                            faculty={facultyList.find(f => f.id === review.facultyId)}
                                             onDelete={() => handleRemoveReview(review.id)}
-                                            showDeleteButton
-                                            onCardClick={() => handleReviewCardClick(review)}
+                                            compact
                                         />
                                     ))}
                                 </div>

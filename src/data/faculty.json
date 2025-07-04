@@ -2,11 +2,12 @@
     {
         "id": "1",
         "name": "Dr. Sarah Johnson",
-        "department": "Computer Science",
+        "department": "Department of CSE",
         "rating": 4.8,
         "emoji": "👩‍🏫",
         "experience": 12,
         "officeHours": "Mon, Wed 2-4 PM",
+        "designation": "Professor",
         "about": "Dr. Johnson specializes in artificial intelligence and machine learning. With over a decade of experience in both academia and industry, she brings practical insights to theoretical concepts. Her teaching philosophy emphasizes hands-on learning and real-world applications.",
         "researchInterests": [
             "Machine Learning",
@@ -37,11 +38,12 @@
     {
         "id": "2",
         "name": "Prof. Michael Chen",
-        "department": "Software Engineering",
+        "department": "Department of EEE",
         "rating": 4.6,
         "emoji": "👨‍🏫",
         "experience": 8,
         "officeHours": "Tue, Thu 1-3 PM",
+        "designation": "Associate Professor",
         "about": "Prof. Chen is passionate about software architecture and clean code practices. He combines academic excellence with industry experience from leading tech companies. His courses focus on practical software development skills and modern development methodologies.",
         "researchInterests": [
             "Software Architecture",
@@ -72,11 +74,12 @@
     {
         "id": "3",
         "name": "Dr. Emily Rodriguez",
-        "department": "Data Science",
+        "department": "Department of Civil Engineering",
         "rating": 4.9,
         "emoji": "👩‍💻",
         "experience": 15,
         "officeHours": "Mon, Fri 10-12 AM",
+        "designation": "Assistant Professor",
         "about": "Dr. Rodriguez is a leading expert in data science and statistical analysis. She has published over 50 research papers and has been recognized for her innovative teaching methods that make complex statistical concepts accessible to students.",
         "researchInterests": [
             "Statistical Learning",
@@ -103,11 +106,12 @@
     {
         "id": "4",
         "name": "Prof. David Kim",
-        "department": "Cybersecurity",
+        "department": "Business Administration",
         "rating": 4.7,
         "emoji": "👨‍🔒",
         "experience": 10,
         "officeHours": "Wed, Thu 3-5 PM",
+        "designation": "Lecturer",
         "about": "Prof. Kim is a cybersecurity expert with extensive experience in network security and ethical hacking. He brings real-world security challenges into the classroom and prepares students for careers in cybersecurity.",
         "researchInterests": [
             "Network Security",
@@ -134,11 +138,12 @@
     {
         "id": "5",
         "name": "Dr. Lisa Thompson",
-        "department": "Human-Computer Interaction",
+        "department": "Department of Economics",
         "rating": 4.5,
         "emoji": "👩‍🎨",
         "experience": 7,
         "officeHours": "Tue, Fri 2-4 PM",
+        "designation": "Assistant Professor",
         "about": "Dr. Thompson specializes in user experience design and human-computer interaction. She combines design thinking with technical implementation to create intuitive and accessible digital experiences.",
         "researchInterests": [
             "User Experience Design",
@@ -161,5 +166,127 @@
                 "url": "https://example.com/uxlab"
             }
         ]
+    },
+    {
+        "id": "6",
+        "name": "Dr. Alex Green",
+        "department": "Institute of Natural Sciences",
+        "rating": 4.4,
+        "emoji": "🧑‍🔬",
+        "experience": 9,
+        "officeHours": "Mon, Wed 11-1 PM",
+        "designation": "Professor",
+        "about": "Dr. Green is a passionate researcher in natural sciences, focusing on interdisciplinary studies.",
+        "researchInterests": [
+            "Biology",
+            "Chemistry",
+            "Physics"
+        ],
+        "courses": [
+            "General Biology",
+            "Organic Chemistry",
+            "Physics I"
+        ],
+        "links": []
+    },
+    {
+        "id": "7",
+        "name": "Prof. Jane Smith",
+        "department": "Department of English",
+        "rating": 4.3,
+        "emoji": "👩‍🎓",
+        "experience": 6,
+        "officeHours": "Tue, Thu 10-12 AM",
+        "designation": "Lecturer",
+        "about": "Prof. Smith specializes in English literature and linguistics.",
+        "researchInterests": [
+            "Literature",
+            "Linguistics"
+        ],
+        "courses": [
+            "English Literature",
+            "Linguistics"
+        ],
+        "links": []
+    },
+    {
+        "id": "8",
+        "name": "Dr. Mark Lee",
+        "department": "Department of Environment & Development Studies",
+        "rating": 4.2,
+        "emoji": "🧑‍🌾",
+        "experience": 11,
+        "officeHours": "Fri 1-3 PM",
+        "designation": "Assistant Professor",
+        "about": "Dr. Lee is an expert in environmental studies and sustainable development.",
+        "researchInterests": [
+            "Sustainability",
+            "Development Studies"
+        ],
+        "courses": [
+            "Environmental Science",
+            "Development Policy"
+        ],
+        "links": []
+    },
+    {
+        "id": "9",
+        "name": "Prof. Anna Brown",
+        "department": "Department of Media Studies & Journalism",
+        "rating": 4.1,
+        "emoji": "🎤",
+        "experience": 5,
+        "officeHours": "Wed 2-4 PM",
+        "designation": "Lecturer",
+        "about": "Prof. Brown teaches media studies and journalism.",
+        "researchInterests": [
+            "Media",
+            "Journalism"
+        ],
+        "courses": [
+            "Media Ethics",
+            "News Writing"
+        ],
+        "links": []
+    },
+    {
+        "id": "10",
+        "name": "Dr. Emily White",
+        "department": "Department of Pharmacy",
+        "rating": 4.0,
+        "emoji": "💊",
+        "experience": 8,
+        "officeHours": "Mon, Thu 9-11 AM",
+        "designation": "Professor",
+        "about": "Dr. White is a pharmacy expert with a focus on clinical research.",
+        "researchInterests": [
+            "Pharmacology",
+            "Clinical Research"
+        ],
+        "courses": [
+            "Pharmacy Practice",
+            "Clinical Trials"
+        ],
+        "links": []
+    },
+    {
+        "id": "11",
+        "name": "Prof. Brian Black",
+        "department": "Department of Biotechnology and Genetic Engineering",
+        "rating": 4.6,
+        "emoji": "🧬",
+        "experience": 10,
+        "officeHours": "Tue, Fri 3-5 PM",
+        "designation": "Associate Professor",
+        "about": "Prof. Black is a specialist in biotechnology and genetic engineering.",
+        "researchInterests": [
+            "Biotechnology",
+            "Genetics"
+        ],
+        "courses": [
+            "Genetic Engineering",
+            "Biotech Lab"
+        ],
+        "links": []
     }
 ]

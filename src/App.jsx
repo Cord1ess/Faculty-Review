@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import FacultyPage from './pages/FacultyPage';
@@ -43,12 +43,15 @@ const SectionTitle = ({ title }) => (
 
 function App() {
   const [activeModal, setActiveModal] = useState(null); // 'login' or 'signup' or null
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(() => {
+    return localStorage.getItem('isLoggedIn') === 'true';
+  });
 
   // Simple admin login logic
   const handleLogin = (email, password) => {
     if (email === 'admin' && password === 'admin') {
       setIsLoggedIn(true);
+      localStorage.setItem('isLoggedIn', 'true');
       setActiveModal(null);
       return true;
     }
@@ -57,6 +60,7 @@ function App() {
 
   const handleLogout = () => {
     setIsLoggedIn(false);
+    localStorage.removeItem('isLoggedIn');
   };
 
   const handleOpenModal = (modalType) => {

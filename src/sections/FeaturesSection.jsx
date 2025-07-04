@@ -15,17 +15,17 @@ const FeaturesSection = () => (
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8 md:gap-24 w-full">
             {/* Review Art */}
             <div className="flex flex-col items-center w-full max-w-xs md:w-80">
-                <img src={reviewArt} alt="Review Art" className="w-40 h-40 md:w-80 md:h-80 object-contain mb-2" />
+                <img src={reviewArt} alt="Review Art" className="w-40 h-40 md:w-80 md:h-80 object-contain mb-2 transition-transform duration-300 ease-in-out hover:scale-110" />
                 <span className="text-center text-xl font-semibold text-white/90 mt-1">Manage and Review Your Faculties</span>
             </div>
             {/* Privacy Art */}
             <div className="flex flex-col items-center w-full max-w-xs md:w-80">
-                <img src={privacyArt} alt="Privacy Art" className="w-40 h-40 md:w-80 md:h-80 object-contain mb-2" />
+                <img src={privacyArt} alt="Privacy Art" className="w-40 h-40 md:w-80 md:h-80 object-contain mb-2 transition-transform duration-300 ease-in-out hover:scale-110" />
                 <span className="text-center text-xl font-semibold text-white/90 mt-1">Your Reviews are always Anonymous</span>
             </div>
             {/* Upvote/Downvote Art */}
             <div className="flex flex-col items-center w-full max-w-xs md:w-80">
-                <img src={upvoteArt} alt="Upvote/Downvote Art" className="w-40 h-40 md:w-80 md:h-80 object-contain mb-2" />
+                <img src={upvoteArt} alt="Upvote/Downvote Art" className="w-40 h-40 md:w-80 md:h-80 object-contain mb-2 transition-transform duration-300 ease-in-out hover:scale-110" />
                 <span className="text-center text-xl font-semibold text-white/90 mt-1">Upvote and Downvote other Reviews</span>
             </div>
         </div>
